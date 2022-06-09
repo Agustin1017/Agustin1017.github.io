@@ -9,39 +9,40 @@ body {
   background-image: url(../imagenes/background.png); 
 }
 
+html{
+  height: 100%;
+}
+
 /*Comienzo de Header*/
 .grid-container {
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1900px;
-  height: 2000px;
-  gap: 20px;
+  top: 0px;
+  min-height: 100%;
 }
 
 /*Cabecera de pagina-Logo-Titulo*/
 header {
   position: relative;
-  top: 10px;
-  left: 0px;
-  height: 70px;
-  width: 100%;
+  left: 5px;
+  margin-right: 15px;
+  height: 150px;
+  width: 199.5%;
   background: #000000;
  }
   header h1 {
     position: absolute;
-    top: 0px;
-    left: 130px;
-    font-size: 25px;
+    top: 35px;
+    left: 150px;
+    font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #ffffff;
    }
   header img {
     position: absolute;
-    top: 3px;
-    left: 3px;
+    top: 30px;
+    left: 15px;
     border-radius: 50%;
-    height: 90%;
+    height: 50%;
    }
 
 .logo-imagen {
@@ -59,9 +60,9 @@ header {
 /*barra de navergacion*/
 .menu {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  background: cyan;
+  top: 40px;
+  right: 15px;
+  font-size: 25px;
  }
 
 .menu ul li {
@@ -73,10 +74,9 @@ header {
 
 .menu ul li a {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 251, 251);
   margin-right: 5px;
-  margin-left: 5px;
-  font-size: 1.2em; 
+  margin-left: 5px; 
 }
 
 a {
@@ -102,13 +102,12 @@ a:hover {
 section {
   position: relative;
   top: 200px;
-  left: 0px;
-  width: 100%;
+  left: 50%;
   height: 550px;
  }
 
   section h2 {
-    font-size: 33px;
+    font-size: 45px;
     text-align: center;
     text-decoration: underline;
    }
@@ -119,10 +118,9 @@ article {
  }
 
 #Tabla {
-  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 17px;
+  font-size: 25px;
 }
 
   #Tabla ol li {
@@ -137,6 +135,19 @@ tr td {
 tr td ol {
   text-align: left;
  }
+
+ /*INICIO-ARTICULO-INFORMACION*/
+
+.Informacion-autos{
+  position: relative;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+}
+ /*FIN-ARTICULO-INFORMACION*/
+
 
 /*FIN-SECTION-INDEX*/
 /*INICIO-DE-SECTION-AUTOS*/
@@ -172,9 +183,10 @@ tr td ol {
 
 .pie-de-pagina {
   position: relative;
-  margin-right: 5px;
-  margin-left: 5px;
-  top: 380px;
+  height: 100%;
+  width: 199.5%;
+  top: 925px;
+  left: 3px;
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 100px 100px;
@@ -182,6 +194,7 @@ tr td ol {
   color: #fff;
   height: 250px;
   align-content: center; 
+  align-items: end;
 }
 
   .pie-de-pagina h3 {
@@ -203,8 +216,6 @@ tr td ol {
 /*Footer-Fin*/
 
 
-
-
 /*media-inicio*/
 
 @media (min-width: 1200px){
@@ -219,6 +230,8 @@ tr td ol {
      width: 50%;
     }
 }
+
+
 
 
 
